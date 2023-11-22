@@ -29,7 +29,7 @@ const loadDefaultEnv = () => {
     content.split("\n").forEach((line) => {
       const [key, value] = line.split("=");
       if (key && value && key === "VERCEL_PROJECT_NAME") {
-        projectName = value.trim();
+        projectName = value.trim().replace(/\"/g, "");
       }
     });
   }

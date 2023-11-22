@@ -31,8 +31,8 @@ if [[ $DEPLOYMENT_OUTPUT == *"deployed at"* ||  $DEPLOYMENT_OUTPUT == *"reusing"
   # Step 3: Deploy Frontend
   echo "Deploying Frontend..."
   cd scaffold-eth-2/packages/nextjs
-  yes | yarn install
-  yarn build
+#   yes | yarn install
+#   yarn build
 
   # Deploy to Vercel
   echo "Deploying to Vercel..."
